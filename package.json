@@ -1,0 +1,22 @@
+{
+  "author": "Erin Carter <hi@dnvsfn.com> (http://github.com/ecarter)",
+  "name": "doto",
+  "description": "a To-Do collector, exporter, and manager",
+  "version": "0.0.1-pre",
+  "homepage": "http://github.com/ecarter/doto",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/ecarter/doto.git"
+  },
+  "main": "index",
+  "scripts": {
+    "test": "mocha"
+  },
+  "engines": {
+    "node": ">=0.4.11"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "mocha": ">=0.10.2"
+  }
+}
