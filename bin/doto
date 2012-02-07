@@ -1,0 +1,27 @@
+#!/usr/bin/env node
+
+/**
+ * Doto - bin
+ * Copyright (C) 2012 Erin Carter <hi@dnvsfn.com> (http://github.com/ecarter)
+ * MIT Licensed
+ */
+
+var cli = require('clii')
+  , Doto = require('../');
+
+cli('doto v0.0.1')
+  .option('-s, --search [path]  Search directory or file for to-do items')
+  .option('-f, --file [name]  Save results to file')
+  .run( function (options) {
+    
+    options = options || {};
+    options.search = options.search || './';
+    options.file = options.file || 'TODO.md';
+    options.ignore = options.ignore || [ 'node_modules', 'test' ];
+    
+    Doto().run( options, function (output) {
+      // console.log('output:',output);
+      console.log('To-do items for "' + options.search + '" saved to ' + options.file);
+    });
+    
+  })
