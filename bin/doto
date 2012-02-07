@@ -13,7 +13,7 @@ cli('doto v0.0.1')
   .option('-s, --search [path]  Search directory or file for to-do items')
   .option('-f, --file [name]  Save results to file')
   .run( function (options) {
-    
+    console.log('options',options);
     options = options || {};
     options.search = options.search || './';
     options.file = options.file || 'TODO.md';
