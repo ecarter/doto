@@ -9,6 +9,9 @@
     "url": "git://github.com/ecarter/doto.git"
   },
   "main": "index",
+  "bin": {
+    "doto": "./bin/doto"
+  },
   "scripts": {
     "test": "mocha"
   },
