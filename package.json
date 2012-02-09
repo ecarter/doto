@@ -1,7 +1,7 @@
 {
   "author": "Erin Carter <hi@dnvsfn.com> (http://github.com/ecarter)",
   "name": "doto",
-  "description": "a To-Do collector, exporter, and manager",
+  "description": "a to-do utility",
   "version": "0.0.1-pre",
   "homepage": "http://github.com/ecarter/doto",
   "repository": {
