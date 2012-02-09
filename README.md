@@ -1,21 +1,20 @@
 # Doto
 
-  a To-Do collector, exporter, and manager.
+  a to-do utility
 
----
 
-## Requirements
+## Requires
 
-* [NodeJS](http://nodejs.org)
+* [Node.js](http://nodejs.org)
 * [NPM - Node Package Manager](http://npmjs.org)
 
----
 
-## Getting Started
+## Install
 
-  See the source file comments for now. Lame, yes I know  ಠ_ಠ
+    $ git clone git@github.com:ecarter/doto.git
+    $ cd ./bldr
+    $ npm install
 
----
 
 ## Licensing
 

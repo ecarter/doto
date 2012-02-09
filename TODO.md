@@ -4,14 +4,16 @@
 
 ## lib / read.js
 
-* __[line 34](.//lib/read.js#L34) passes tests but needs review__ 
+* __[line 36](.//lib/read.js#L36) passes tests but needs review__ 
+* __[line 48](.//lib/read.js#L48) file order causes errors in #read() test__ 
 
 ---
 
 ## lib / run.js
 
-* __[line 27](.//lib/run.js#L27) options {} ?:__  ``` self.read( options.search, options, function ( err, files ) {```
+* __[line 28](.//lib/run.js#L28) formatting options should be configurable / templated__ 
+* __[line 36](.//lib/run.js#L36) options {} ?:__  ```self.read( options.search, options, function ( err, files ) {```
 
-* __[line 65](.//lib/run.js#L65) potential memory / preformance issue:__  ```   self._generated = output;```
+* __[line 76](.//lib/run.js#L76) potential memory / preformance issue:__  ```self._generated = output;```
 
 
