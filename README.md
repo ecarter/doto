@@ -12,7 +12,7 @@
 ## Install
 
     $ git clone git@github.com:ecarter/doto.git
-    $ cd ./bldr
+    $ cd ./doto
     $ npm install
 
 
