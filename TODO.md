@@ -12,7 +12,7 @@
 ## lib / run.js
 
 * __[line 28](.//lib/run.js#L28) formatting options should be configurable / templated__ 
-* __[line 36](.//lib/run.js#L36) options {} ?:__  ```self.read( options.search, options, function ( err, files ) {```
+* __[line 42](.//lib/run.js#L42) need to pass #parse() options:__  ```var parsed = self.parse( file.content );```
 
 * __[line 76](.//lib/run.js#L76) potential memory / preformance issue:__  ```self._generated = output;```
 
