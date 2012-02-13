@@ -9,11 +9,23 @@
 * [NPM - Node Package Manager](http://npmjs.org)
 
 
+# Dependencies
+
+* [Clii](http://github.com/ecarter/clii) - command line toolkit
+
+
 ## Install
 
     $ git clone git@github.com:ecarter/doto.git
     $ cd ./doto
     $ npm install
+
+
+## Test
+
+Testing done with [Mocha](http://visionmedia.github.com/mocha)
+
+    $ make test
 
 
 ## Licensing
