@@ -12,4 +12,4 @@ todo:
 		--file TODO.md \
 		--ignore test,node_modules,TODO.md
 
-PHONY: test test-unit todo
+.PHONY: test test-unit todo
