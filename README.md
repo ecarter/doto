@@ -51,7 +51,7 @@ Testing done with [Mocha](http://visionmedia.github.com/mocha)
 
       doto -sfp ./lib Tasks.md "^(.*)//sTask?:?(.*)$"
 
-[Example TODO.md](./TODO.md)
+[Example TODO.md](https://github.com/ecarter/doto/blob/master/TODO.md)
 
 ## Licensing
 
