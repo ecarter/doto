@@ -1,8 +1,8 @@
 {
   "author": "Erin Carter <hi@dnvsfn.com> (http://github.com/ecarter)",
   "name": "doto",
-  "description": "a to-do utility",
-  "version": "0.0.1-pre",
+  "description": "a to-do utility for source comments",
+  "version": "0.0.1-alpha-1",
   "homepage": "http://github.com/ecarter/doto",
   "repository": {
     "type": "git",
