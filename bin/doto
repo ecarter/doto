@@ -6,24 +6,43 @@
  * MIT Licensed
  */
 
-var cli = require('clii')
+var Clii = require('clii')
   , Doto = require('../');
 
-cli('doto v0.0.1')
-  .option('-s, --search [path]  Search directory or file for to-do items')
-  .option('-f, --file [name]  Save results to file')
-  .option('-i, --ignore <files>')
+Clii('doto v0.0.1')
+  .option('-s, --search [path]  Search directory files')
+  .option('-f, --file [name]  Export TODOs to file')
+  .option('-i, --ignore <files>  Exclude from search')
+  .option('-p, --pattern <regexp>  Match regular expression')
   .run( function (options) {
     
     options = options || {};
-    options.search = options.search || './';
-    options.file = options.file || 'TODO.md';
-    options.ignore = typeof options.ignore === 'string'
-                      ? options.ignore.split(/,/g)
-                      : [ 'node_modules', 'test' ];
     
-    Doto( options ).run( function (output) {
-      console.log('To-do for "' + options.search + '" saved to ' + options.file);
-    });
-    
+    if ( !options.search ) {
+
+      if ( !options.help && !options.version ) {
+        this.usage();
+
+        return console.log(
+          '\n  Examples:\n\n'
+        + '  # basic\n\n'
+        + '    doto -sf ./lib TODO.md\n\n'
+        + '  # ignore files ( comma separated, no space )\n\n'
+        + '    doto -sfi ./lib TODO.md node_modules,test,docs\n\n'
+        + '  # match patterns\n\n'
+        + '    doto -sfp ./lib Tasks.md "^(.*)\/\/\sTask?:?(.*)$"\n'
+        );
+      }
+
+    } else {
+      options.file = options.file || 'TODO.md';
+      options.ignore = typeof options.ignore === 'string'
+                        ? options.ignore.split(/,/g)
+                        : [ 'node_modules', 'test' ];
+      
+      Doto( options ).run( function (output) {
+        console.log('To-do for "' + this._search + '" saved to ' + this._file);
+      });
+    }
+
   })
