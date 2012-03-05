@@ -52,5 +52,15 @@ describe('#read()', function(){
         done();
     });
   })
-  
+
+	it('should non-recursively read contents of test-project', function(done){
+		Doto().read(
+				'./test/test-project'
+			, { recursive: false }
+			, function (err, content) {
+				content.should.eql( files.slice(1,3) );
+				done();
+		});
+	})
+ 
 })
