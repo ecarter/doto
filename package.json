@@ -18,7 +18,9 @@
   "engines": {
     "node": ">=0.4.11"
   },
-  "dependencies": {},
+  "dependencies": {
+    "clii": "git://github.com/ecarter/clii.git#v0.0.1-alpha-3"
+  },
   "devDependencies": {
     "mocha": ">=0.10.2"
   }
