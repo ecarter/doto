@@ -1,9 +1,5 @@
 
-all: test todo
-
-test: test-unit
-
-test-unit:
+test:
 	@./node_modules/.bin/mocha
 
 todo:
@@ -12,4 +8,4 @@ todo:
 		--file TODO.md \
 		--ignore test,node_modules,TODO.md
 
-.PHONY: test test-unit todo
+.PHONY: test todo
